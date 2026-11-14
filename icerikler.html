@@ -26,6 +26,23 @@
 
       <section aria-labelledby="araclar-basligi">
         <h2 id="araclar-basligi">Araç rehberleri</h2>
+        <div class="search-controls">
+          <label for="arac-arama">Araç ara</label>
+          <form id="arac-arama-form" role="search">
+            <input
+              id="arac-arama"
+              name="q"
+              type="search"
+              placeholder="Kart başlığına göre ara"
+              autocomplete="off"
+            >
+            <button type="button" id="arac-arama-temizle">Temizle</button>
+          </form>
+          <p id="arac-sayaci" role="status" aria-live="polite"></p>
+          <p id="sonuc-yok" role="status" aria-live="polite" hidden>
+            Aramanızla eşleşen kart bulunamadı.
+          </p>
+        </div>
 
         <article id="n8n">
           <h3>n8n</h3>
@@ -72,5 +89,6 @@
     <footer>
       <p>&copy; 2026 OtoAI Rehberi</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
